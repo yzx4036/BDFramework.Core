@@ -26,8 +26,6 @@ Note: All bug fixes and new features will be submitted to the Debug branch first
 # 依赖的插件(Dependent plugins)
 使用了以下收费插件,请自行购买下载（或问好心群友要） ：  
 **(否则会报错!)**  
-**(否则会报错!)**  
-**(否则会报错!)**  
 The following charging plug-ins are used. Please purchase and download them yourself.  
 <br>[Odin] (https://assetstore.unity.com/packages/tools/utilities/odin-inspector-and-serializer-89041)  
 打包需要配置为：EditorOnly模式  
@@ -50,43 +48,43 @@ UPM Setting:
 ### 【2020.06开启 社区建设计划】  
 ### [To do List]( https://github.com/yimengfan/BDFramework.Core/projects/1)  
 如果你想加入我们，并贡献代码，请联系我们。QQ:755737878  
-## 框架特点(Feature)
-   **·TDD工作流、完整的测试用例:**  
-  完整的测试用例，保证框架的稳定。
-   
-   **·DevOps工作流:**  
-   这个还得等一小会~
-  
-  **一键C#热更:**  
-   BD中对ILRuntime进行了二次改造，不用分工程、并且写了一套完善的脚本编译机制,打包工具自动搜集热更代码进行打包。  
-   并且对常用库进行了适配.  
- 
-   **一键版本发布:**  
-   代码、资源、表格一键打包,版本管理自动下载  
-
-   
-   **完善的资源管理系统，一套API各平台自动切换：**
-   BD抛弃了Resources目录，并且保留的用户Resources的开发习惯.  
-   一套API自动切换，兼容AB和Editor模式.  
-   而且有一套比较完善的AssetBundle管理机制：图集管理、自动搜集Shader、0冗余打包  
-   并且bd做了一套精简版可寻址，无论你的Asset再Streaming或者persistent下，都能自动寻找并且加载  
-   
-   **完善的UI工作流:**  
-   BD中有一整套完善的UI工作流(这里我们只对UI逻辑进行管理，不考虑ui制作)，无论你是UGUI NGUI还是其他。  
-   我们提供了一套UI管理、值绑定、数据监听、数据流、状态管理等一系列机制.  
-   
-   **SQL化表格管理:**   
-   BD中用Sqlite进行管理表格,并且提供了excel2code，excel2json，excel2sqlite等工具  
-   
-   **发现式业务注册:**  
-   BDFrame底层提供了一套发现式的业务注册.无需以前的各种Register,只要定制好自己的标签、管理器就能被自动注册.  
-   在此之上BD,实现了ScreenviewManger,UIManager,EventManager...等一些列管理器。  
-   这套机制高度可扩展、可定制,使用者根据自己的需求可以实现其他的管理器  
-   并且这个在编辑器环境下也生效的哦~ 写工具时候会很有帮助的哦~  
-   
-   **模块管理、调度**  
-   BD给大家带来了一种开发思路，用户使用流程的Timeline（不是unity的那个timeline）,  
-   根据用户流程进行切分模块、调度,这里的模块并不是狭义的一个窗口哦~  
+## 框架特点(Feature)  
+**【TDD工作流、完整的测试用例】:**  
+完整的测试用例，保证框架的稳定。  
+**【DevOps工作流】:**  
+这个还得等一小会~  
+**【一键版本构建】:**  
+1.代码、资源、表格一键打包  
+2.版本管理自动下载  
+3.支持所有CI、CD工作流   
+4.编辑器高度可扩展
+**【一键C#热更】:**  
+1.无需分工程，一键打包C#热更代码  
+2.自动化打包分析  
+3.完备热更TDD工作流  
+**【完善的资源管理系统】：**  
+1.一套API，Editor和真机动态加载Assetbundle和editor asset。  
+2.内置图集管理，无需使用者处理    
+3.自动搜集Shader，Key word    
+4.自动资源寻址.  
+5.一键打包资源，0冗余.编辑器高度可扩展.   
+6.资源包“测试”检查.  
+7.支持URP工作流.  
+**【完善的UI工作流】:**  
+1.UI管理、值绑定、数据监听、数据流、状态管理等一系列机制.  
+2.科学的业务拆分，解耦设计  
+3.完备热更TDD工作流  
+**【SQL化表格管理】:**   
+1.Excel打包到Sqlite  
+2.Excel自动生成class  
+**发现式业务注册:**  
+BDFrame底层提供了一套发现式的业务注册.无需以前的各种Register,只要定制好自己的标签、管理器就能被自动注册.  
+在此之上BD,实现了ScreenviewManger,UIManager,EventManager...等一些列管理器。  
+这套机制高度可扩展、可定制,使用者根据自己的需求可以实现其他的管理器  
+并且这个在编辑器环境下也生效的哦~ 写工具时候会很有帮助的哦~  
+**状态机式导航管理**  
+BD给大家带来了一种开发思路，用户使用流程的Timeline（不是unity的那个timeline）,  
+根据用户流程进行切分模块、调度,这里的模块并不是狭义的一个窗口哦~  
    
 
    
