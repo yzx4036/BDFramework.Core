@@ -70,9 +70,6 @@ namespace ILRuntime.Runtime.Generated
             args = new Type[]{typeof(BDFramework.AssetLoadPath), typeof(System.String)};
             method = type.GetMethod("Load", flag, null, args, null);
             app.RegisterCLRMethodRedirection(method, Load_3);
-            args = new Type[]{};
-            method = type.GetMethod("UnloadAll", flag, null, args, null);
-            app.RegisterCLRMethodRedirection(method, UnloadAll_4);
             args = new Type[]{typeof(UnityEngine.Sprite)};
             if (genericMethods.TryGetValue("LoadALL", out lst))
             {
@@ -81,7 +78,7 @@ namespace ILRuntime.Runtime.Generated
                     if(m.MatchGenericParameters(args, typeof(UnityEngine.Sprite[]), typeof(System.String)))
                     {
                         method = m.MakeGenericMethod(args);
-                        app.RegisterCLRMethodRedirection(method, LoadALL_5);
+                        app.RegisterCLRMethodRedirection(method, LoadALL_4);
 
                         break;
                     }
@@ -89,7 +86,10 @@ namespace ILRuntime.Runtime.Generated
             }
             args = new Type[]{};
             method = type.GetMethod("get_ResLoader", flag, null, args, null);
-            app.RegisterCLRMethodRedirection(method, get_ResLoader_6);
+            app.RegisterCLRMethodRedirection(method, get_ResLoader_5);
+            args = new Type[]{};
+            method = type.GetMethod("UnloadAll", flag, null, args, null);
+            app.RegisterCLRMethodRedirection(method, UnloadAll_6);
             args = new Type[]{typeof(UnityEngine.Sprite)};
             if (genericMethods.TryGetValue("Load", out lst))
             {
@@ -202,18 +202,7 @@ namespace ILRuntime.Runtime.Generated
             return __ret;
         }
 
-        static StackObject* UnloadAll_4(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
-        {
-            ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
-            StackObject* __ret = ILIntepreter.Minus(__esp, 0);
-
-
-            BDFramework.ResourceMgr.BResources.UnloadAll();
-
-            return __ret;
-        }
-
-        static StackObject* LoadALL_5(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
+        static StackObject* LoadALL_4(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
         {
             ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
             StackObject* ptr_of_this_method;
@@ -229,7 +218,7 @@ namespace ILRuntime.Runtime.Generated
             return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method);
         }
 
-        static StackObject* get_ResLoader_6(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
+        static StackObject* get_ResLoader_5(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
         {
             ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
             StackObject* __ret = ILIntepreter.Minus(__esp, 0);
@@ -238,6 +227,17 @@ namespace ILRuntime.Runtime.Generated
             var result_of_this_method = BDFramework.ResourceMgr.BResources.ResLoader;
 
             return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method);
+        }
+
+        static StackObject* UnloadAll_6(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
+        {
+            ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
+            StackObject* __ret = ILIntepreter.Minus(__esp, 0);
+
+
+            BDFramework.ResourceMgr.BResources.UnloadAll();
+
+            return __ret;
         }
 
         static StackObject* Load_7(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
