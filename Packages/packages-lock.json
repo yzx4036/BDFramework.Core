@@ -1,21 +1,29 @@
 {
   "dependencies": {
-    "com.ourpalm.ilruntime": {
-      "version": "1.6.5",
+    "com.bdframework.core": {
+      "version": "file:com.bdframework.core",
       "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.ourpalm.ilruntime": "1.6.6"
+      }
+    },
+    "com.ourpalm.ilruntime": {
+      "version": "1.6.6",
+      "depth": 1,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
     },
     "com.unity.ext.nunit": {
-      "version": "1.0.0",
+      "version": "1.0.6",
       "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.rider": {
-      "version": "1.1.4",
+      "version": "1.2.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -24,53 +32,47 @@
       "url": "https://packages.unity.cn"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.2",
+      "version": "1.2.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.cn"
     },
     "com.unity.render-pipelines.core": {
-      "version": "7.4.3",
-      "depth": 1,
+      "version": "7.6.0",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.ugui": "1.0.0"
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.physics": "1.0.0"
       },
       "url": "https://packages.unity.cn"
     },
     "com.unity.render-pipelines.universal": {
-      "version": "7.4.3",
+      "version": "7.6.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.render-pipelines.core": "7.4.3",
-        "com.unity.shadergraph": "7.4.3"
+        "com.unity.render-pipelines.core": "7.6.0",
+        "com.unity.shadergraph": "7.6.0"
       },
       "url": "https://packages.unity.cn"
     },
-    "com.unity.scriptablebuildpipeline": {
-      "version": "1.7.3",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.cn"
-    },
     "com.unity.shadergraph": {
-      "version": "7.4.3",
+      "version": "7.6.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.render-pipelines.core": "7.4.3"
+        "com.unity.render-pipelines.core": "7.6.0"
       },
       "url": "https://packages.unity.cn"
     },
     "com.unity.test-framework": {
-      "version": "1.1.18",
+      "version": "1.1.24",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.ext.nunit": "1.0.0",
+        "com.unity.ext.nunit": "1.0.6",
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
       },
