@@ -74,8 +74,8 @@
      <Compile Include="Packages\com.bdframework.core\Runtime\ManagerBase\@hotfix\ManagerBase.cs" />
      <Compile Include="Packages\com.bdframework.core\Runtime\UI(UFlux)\Component\PageList\PageList.cs" />
      <Compile Include="Packages\com.bdframework.core\Runtime\UI(UFlux)\@hotfix\StateManager\Reducer\AReducers.cs" />
-     <Compile Include="Packages\com.bdframework.core\Runtime\AssetsManager\Script\ScriptLoder.cs" />
      <Compile Include="Packages\com.bdframework.core\Runtime\UI(UFlux)\@hotfix\StateManager\Store\StoreFactory.cs" />
+     <Compile Include="Packages\com.bdframework.core\Runtime\AssetsManager\Script\ScriptLoder.cs" />
      <Compile Include="Packages\com.bdframework.core\Runtime\UI(UFlux)\@hotfix\View\Atrribute\ComponentAttribute.cs" />
      <Compile Include="Packages\com.bdframework.core\Runtime\UI(UFlux)\@hotfix\StateManager\Store\StoreT.cs" />
      <Compile Include="Packages\com.bdframework.core\Runtime\AssetsManager\ArtAsset\AssetBundle\V2\AssetBundleMgrV2.cs" />
@@ -418,26 +418,8 @@
  <Reference Include="System.Net.Sockets">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Net.Sockets.dll</HintPath>
  </Reference>
- <Reference Include="System.IO.Compression">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.IO.Compression.dll</HintPath>
- </Reference>
- <Reference Include="DemiLib">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/3rdPlugins/Dotween/DemiLib/Core/DemiLib.dll</HintPath>
- </Reference>
  <Reference Include="Microsoft.CodeAnalysis">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/Microsoft.CodeAnalysis.dll</HintPath>
- </Reference>
- <Reference Include="ICSharpCode.SharpZipLib">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Excel/ICSharpCode.SharpZipLib.dll</HintPath>
- </Reference>
- <Reference Include="System.Net.Http">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Net.Http.dll</HintPath>
- </Reference>
- <Reference Include="System.Globalization.Extensions">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Globalization.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="System.Numerics.Vectors">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Numerics.Vectors.dll</HintPath>
  </Reference>
  <Reference Include="System.Security.SecureString">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Security.SecureString.dll</HintPath>
@@ -451,20 +433,62 @@
  <Reference Include="System.Text.Encoding.CodePages">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Text.Encoding.CodePages.dll</HintPath>
  </Reference>
- <Reference Include="DOTweenEditor">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/3rdPlugins/Dotween/DOTween/Editor/DOTweenEditor.dll</HintPath>
- </Reference>
  <Reference Include="DemiEditor">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/3rdPlugins/Dotween/DemiLib/Core/Editor/DemiEditor.dll</HintPath>
  </Reference>
- <Reference Include="Debug.log">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Plugins/Debug/Debug.log.dll</HintPath>
+ <Reference Include="Sirenix.OdinInspector.Attributes">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
  </Reference>
  <Reference Include="System.Buffers">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Buffers.dll</HintPath>
  </Reference>
  <Reference Include="System.Memory">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Memory.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Collections.Immutable">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Collections.Immutable.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Serialization.Config">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/3rdPlugins/Dotween/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Reflection.Metadata">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Reflection.Metadata.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.Utilities.Editor">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Microsoft.CodeAnalysis.CSharp">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+ </Reference>
+ <Reference Include="System.IO.Compression">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.IO.Compression.dll</HintPath>
+ </Reference>
+ <Reference Include="DemiLib">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/3rdPlugins/Dotween/DemiLib/Core/DemiLib.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.SharpZipLib">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Excel/ICSharpCode.SharpZipLib.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Globalization.Extensions">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Globalization.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Net.Http">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Net.Http.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Numerics.Vectors">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Numerics.Vectors.dll</HintPath>
+ </Reference>
+ <Reference Include="Sirenix.OdinInspector.Editor">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTweenEditor">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/3rdPlugins/Dotween/DOTween/Editor/DOTweenEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="Debug.log">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Plugins/Debug/Debug.log.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.CompilerServices.Unsafe">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
@@ -478,8 +502,8 @@
  <Reference Include="System.Runtime.Serialization.Primitives">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Runtime.Serialization.Primitives.dll</HintPath>
  </Reference>
- <Reference Include="System.Collections.Immutable">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Collections.Immutable.dll</HintPath>
+ <Reference Include="ILRuntime.Mono.Cecil">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Library/PackageCache/com.ourpalm.ilruntime@1.6.7/Plugins/ILRuntime.Mono.Cecil.dll</HintPath>
  </Reference>
  <Reference Include="System.Security.Cryptography.Algorithms">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Security.Cryptography.Algorithms.dll</HintPath>
@@ -487,8 +511,8 @@
  <Reference Include="ILRuntime.Mono.Cecil.Pdb">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Library/PackageCache/com.ourpalm.ilruntime@1.6.7/Plugins/ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
  </Reference>
- <Reference Include="DOTween">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/3rdPlugins/Dotween/DOTween/DOTween.dll</HintPath>
+ <Reference Include="Sirenix.Utilities">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
  </Reference>
  <Reference Include="System.Diagnostics.Tracing">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Diagnostics.Tracing.dll</HintPath>
@@ -499,38 +523,14 @@
  <Reference Include="System.Diagnostics.StackTrace">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Diagnostics.StackTrace.dll</HintPath>
  </Reference>
- <Reference Include="ICSharpCode.NRefactory">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Library/PackageCache/com.unity.render-pipelines.core@10.3.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
- </Reference>
  <Reference Include="System.Threading.Tasks.Extensions">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Threading.Tasks.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="System.Reflection.Metadata">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/System.Reflection.Metadata.dll</HintPath>
- </Reference>
- <Reference Include="Microsoft.CodeAnalysis.CSharp">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Packages/com.bdframework.core/Editor/Plugins/Roslyn/Microsoft.CodeAnalysis.CSharp.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Editor">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.OdinInspector.Attributes">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Serialization.Config">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll</HintPath>
- </Reference>
- <Reference Include="Sirenix.Utilities">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll</HintPath>
  </Reference>
  <Reference Include="Sirenix.Serialization">
  <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll</HintPath>
  </Reference>
- <Reference Include="Sirenix.Utilities.Editor">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll</HintPath>
- </Reference>
- <Reference Include="ILRuntime.Mono.Cecil">
- <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Library/PackageCache/com.ourpalm.ilruntime@1.6.7/Plugins/ILRuntime.Mono.Cecil.dll</HintPath>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>D:/_Proj/UnityProj/BDFramework.Core/Library/PackageCache/com.unity.render-pipelines.core@10.3.2/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Program Files/Unity2020_3/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
